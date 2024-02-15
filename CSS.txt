@@ -1,0 +1,326 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    color: #333;
+}
+
+/* Kopfzeile und Navigation */
+header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; /* die maximale Breite */
+    margin: auto;
+    padding: 0 10px;
+}
+
+/* Logo-Stil */
+#logo img {
+    max-width: 40px; /* Größe anpassen für ein größeres Logo */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+nav .signup-button {
+    color: #fff;
+    background: #5c9ead;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    #logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+/* Hauptbanner */
+.hero {
+    background: #e8eff1;
+    padding: 40px 20px;
+    text-align: center;
+}
+/* Hero-Bild-Stil */
+.hero img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+/* Kursbilder */
+.course img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Kursübersicht */
+.course-overview {
+    padding: 20px;
+    text-align: center;
+}
+
+.course-overview-header {
+    margin-bottom: 20px;
+}
+
+.course-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 10px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Anpassung für die Blog-Posts */
+.blog-posts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog-post {
+    flex: 1 1 45%;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    /* Kurse und Blog-Posts stapeln sich auf kleineren Bildschirmen */
+    .course-overview, .blog-posts {
+        flex-direction: column;
+    }
+
+    .course, .blog-post {
+        flex-basis: 100%; /* Nimmt die volle Breite ein */
+    }
+}
+
+/* Angebotsbereich */
+.special-offer {
+    background: #f7f7f7;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.special-offer h2 {
+    color: #5c9ead;
+    margin-bottom: 30px;
+}
+
+.offers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.offer {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin: 10px;
+    flex-basis: calc(30% - 15px);
+    padding: 20px;
+    text-align: left;
+}
+
+.offer h3 {
+    color: #333;
+}
+
+.offer p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.offer button {
+    background: #5c9ead;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .offers {
+        flex-direction: column;
+    }
+
+    .offer {
+        flex-basis: 100%;
+    }
+}
+
+/* Titel der Blog-Übersicht */
+.blog-title {
+    text-align: center; /* Zentriert den Text */
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Container für Blog-Posts */
+.blog-posts-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Stil für Blog-Post */
+.blog-post {
+    flex: 1 1 45%;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .blog-posts-container {
+        flex-direction: column;
+    }
+    .blog-post {
+        width: 100%;
+    }
+}
+
+.blog-post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.blog-post-content {
+    padding: 20px;
+}
+
+.blog-post h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.blog-post p {
+    color: #666;
+}
+
+.blog-post-button {
+    display: inline-block;
+    background: #5c9ead;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-posts-container {
+        flex-direction: column;
+    }
+
+    .blog-post {
+        width: 100%; /* Posts nehmen die volle Breite auf kleineren Bildschirmen ein */
+    }
+}
+
+/* Fußzeile */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p, footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .social-media a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-overview {
+        flex-direction: column;
+    }
+
+    .course {
+        flex-basis: auto;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+    }
+
+    #logo, nav ul {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}

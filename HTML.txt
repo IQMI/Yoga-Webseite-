@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Yoga Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div id="logo">
+            <img src="Logo.png" alt="Yoga Studio Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="kurse.html">Kurse</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="stundenplan.html">Stundenplan</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="signup.html" class="signup-button">Anmelden / Registrieren</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+    <section class="hero">
+        <h1>Willkommen in unserem Yoga Studio</h1>
+        <img src="mindful-1.png" alt="Entspannung im Yoga" class="hero-image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor nulla id vestibulum feugiat. Pellentesque habitant morbi.</p>
+    </section>
+
+    <section class="course-overview">
+        <div class="course-overview-header">
+            <h2>Unsere Kurse</h2>
+        </div>
+        <div class="course-container">
+            <div class="course" id="beginner-courses">
+                <h3>Anfängerkurse</h3>
+                <img src="mindful-2.png" alt="Anfängerkurse">
+                <p>Kurze Beschreibung des Kurses.</p>
+                <button>Mehr erfahren</button>
+            </div>
+            <div class="course" id="advanced-courses">
+                <h3>Fortgeschrittene Kurse</h3>
+                <img src="mindful-3.png" alt="Fortgeschrittene Kurse">
+                <p>Kurze Beschreibung des Kurses.</p>
+                <button>Mehr erfahren</button>
+            </div>
+            <div class="course" id="special-courses">
+                <h3>Spezialkurse</h3>
+                <img src="schwanger_.png" alt="Spezialkurse">
+                <p>Yoga für Schwangere</p>
+                <button>Mehr erfahren</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="special-offer">
+        <h2>Spezialangebote</h2>
+        <p>Entdecken Sie unsere exklusiven Angebote für neue Mitglieder und erfahren Sie die Vorteile des Yoga.</p>
+        <div class="offers">
+            <div class="offer">
+                <h3>Schnupperkurs</h3>
+                <p>Probieren Sie einen Yoga-Kurs aus und finden Sie Ihre innere Ruhe.</p>
+                <button>Mehr erfahren</button>
+            </div>
+            <div class="offer">
+                <h3>10er Karte</h3>
+                <p>Kaufen Sie eine 10er Karte und sparen Sie auf Ihre Yoga-Reise.</p>
+                <button>Mehr erfahren</button>
+            </div>
+            <div class="offer">
+                <h3>Freundschaftswerbung</h3>
+                <p>Bringen Sie einen Freund mit und erhalten Sie beide einen Rabatt auf Ihre Mitgliedschaft.</p>
+                <button>Mehr erfahren</button>
+            </div>
+        </div>
+    </section>
+
+ <section class="blog-overview">
+     <h2 class="blog-title">Blogs</h2>
+     <div class="blog-posts-container">
+          <article class="blog-post">
+             <img src="Blog_1.png" alt="Blog Post Titel 1" class="blog-post-image">
+             <div class="blog-post-content">
+                <h3>Blog Post Titel 1</h3>
+                <p>Kurze Beschreibung des Bloginhalts.</p>
+               <a href="blog-post-1.html" class="blog-post-button">Weiterlesen</a>
+           </div>
+        </article>
+        <article class="blog-post">
+            <img src="Blog_2.png" alt="Blog Post Titel 2" class="blog-post-image">
+            <div class="blog-post-content">
+                <h3>Blog Post Titel 2</h3>
+                <p>Kurze Beschreibung des Bloginhalts.</p>
+                <a href="blog-post-2.html" class="blog-post-button">Weiterlesen</a>
+          </div>
+        </article>
+    </div>
+</section>
+
+
+
+</main>
+
+<footer>
+    <div class="contact-info">
+        <h3>Kontakt</h3>
+        <p>Adresse: Straßenname 123, Stadt</p>
+        <p>Telefon: 01234 567890</p>
+        <p>Email: info@yogastudio.de</p>
+    </div>
+    <div class="navigation">
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="privacy.html">Datenschutz</a></li>
+            <li><a href="terms.html">AGB</a></li>
+        </ul>
+    </div>
+    <div class="social-media">
+        <h3>Folge uns</h3>
+        <a href="http://facebook.com" target="_blank" class="social-icon facebook">
+            <img src="facebook-icon.png" alt="Facebook">
+        </a>
+        <a href="http://twitter.com" target="_blank" class="social-icon twitter">
+            <img src="twitter-icon.png" alt="Twitter">
+        </a>
+        <a href="http://instagram.com" target="_blank" class="social-icon instagram">
+            <img src="instagram-icon.png" alt="Instagram">
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
